@@ -6,6 +6,8 @@ const palette = {
   primary: "#4AD8DA",
 
   gray: "#E6E3E6",
+  gray2: "#8F8F8F",
+  gray3: "#808080",
   error: "#FF0000",
 
   black: "#000000",
@@ -14,11 +16,13 @@ const palette = {
 
 const theme = createTheme({
   colors: {
+    ...palette,
     primary: palette.primary,
     background: palette.white,
     border: palette.gray,
     buttonPrimaryForeground: palette.white,
     error: palette.error,
+    card: palette.white,
   },
   spacing,
   textVariants: {
